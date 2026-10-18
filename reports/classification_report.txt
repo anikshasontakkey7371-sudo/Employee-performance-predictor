@@ -1,0 +1,30 @@
+EMPLOYEE PERFORMANCE PREDICTOR - EVALUATION REPORT
+=======================================================
+
+MODEL COMPARISON:
+                         Model Accuracy Balanced Accuracy
+Logistic Regression (Baseline)   76.50%            78.63%
+      Random Forest Classifier   75.50%            77.30%
+
+RANDOM FOREST DETAILED CLASSIFICATION REPORT:
+-------------------------------------------------------
+              precision    recall  f1-score   support
+
+         Low     0.6739    0.8158    0.7381        38
+      Medium     0.8182    0.7232    0.7678       112
+        High     0.7091    0.7800    0.7429        50
+
+    accuracy                         0.7550       200
+   macro avg     0.7337    0.7730    0.7496       200
+weighted avg     0.7635    0.7550    0.7559       200
+
+
+CONFUSION MATRIX (Actual rows, Predicted cols):
+        Low  Medium  High
+Low      31       7     0
+Medium   15      81    16
+High      0      11    39
+
+ETHICAL NOTICE:
+This model was trained on synthetic data for demonstration.
+It must not be used for autonomous employee employment decisions.
